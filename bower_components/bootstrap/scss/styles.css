@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  line-height: 1.5;
+  text-align: center;
+  background-color: whitesmoke; }
+
+.jumbotron h1 {
+  animation: title-animate 3s infinite ease-in-out; }
+
+.shadow, .btn-primary:hover, .btn-secondary:hover, .btn-success:hover, .btn-danger:hover, .btn-warning:hover {
+  box-shadow: 0px 0px 20px #333; }
+
+.blue-shadow, .btn-info:hover {
+  box-shadow: 0px 0px 20px blue; }
+
+.red-shadow, .btn-warning:hover, .btn.yellow:hover {
+  box-shadow: 0px 0px 20px red; }
+
+.pink-shadow, .btn.pink:hover {
+  box-shadow: 0px 0px 20px pink; }
+
+.orange-shadow, .btn.salmon:hover {
+  box-shadow: 0px 0px 20px orange; }
+
+.transition, .btn {
+  transition: .3s ease-in-out; }
+
+.btn {
+  margin: 30px 0; }
+
+.btn-info {
+  border: 2px dotted lightgreen; }
+
+.btn-primary:hover {
+  background-color: blue; }
+
+.btn-secondary:hover {
+  background-color: #333;
+  color: #fff; }
+
+.btn-success {
+  border-radius: 50px; }
+
+.btn-danger:hover {
+  border-radius: 50%; }
+
+.btn-warning {
+  border-radius: 10px; }
+
+.btn.yellow {
+  border: 1px solid black;
+  background-color: yellow;
+  border-radius: 10px; }
+  .btn.yellow:hover {
+    transform: scale(1.3); }
+
+.btn.pink {
+  background-color: pink;
+  border-radius: 10px; }
+  .btn.pink:hover {
+    transform: scale(1.2); }
+
+.btn.salmon {
+  background-color: salmon;
+  border-radius: 10px; }
+  .btn.salmon:hover {
+    transform: scale(1.5); }
+
+@keyframes title-animate {
+  0%,100% {
+    color: lightblue; }
+  35% {
+    color: salmon; }
+  75% {
+    color: lightgreen; } }
+
+/*# sourceMappingURL=styles.css.map */

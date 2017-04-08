@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/scss/styles.css">
+</head>
+<body>
+
+    <div class="jumbotron">
+        <h1>Button Time!</h1>
+        <div class="demo-box">Click | Hover</div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4 col-xs-12">
+                <button type="button" class="btn btn-lg btn-info">button</button>
+            </div>
+            <div class="col-sm-4 col-xs-12">
+                <button type="button" class="btn btn-lg btn-primary">button</button>
+            </div>
+            <div class="col-sm-4 col-xs-12">
+                <button type="button" class="btn btn-lg btn-secondary">button</button>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-4 col-xs-12">
+                <button type="button" class="btn btn-md btn-success">button</button>
+            </div>
+            <div class="col-sm-4 col-xs-12">
+                <button type="button" class="btn btn-md btn-danger">button</button>
+            </div>
+            <div class="col-sm-4 col-xs-12">
+                <button type="button" class="btn btn-md btn-warning">button</button>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-4 col-xs-12">
+                <button type="button" class="btn btn-sm yellow">button</button>
+            </div>
+            <div class="col-sm-4 col-xs-12">
+                <button type="button" class="btn btn-sm pink">button</button>
+            </div>
+            <div class="col-sm-4 col-xs-12">
+                <button type="button" class="btn btn-sm salmon">button</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--jquery / bootstrap js -->
+    <script src="bower_components/jquery/dist/jquery.min.js" charset="utf-8"></script>
+    <script src="bower_components/bootstrap/js/bootstrap.min.js" charset="utf-8"></script>
+    <script>
+        $(function() {
+            $('.btn-info').on('click', function() {
+                $('.jumbotron .demo-box').text('This is a info button');
+            })
+            $('.btn-primary').on('click', function() {
+                $('.jumbotron .demo-box').text('This is a primary button');
+            })
+            $('.btn-secondary').on('click', function() {
+                $('.jumbotron .demo-box').text('This is a secondary button');
+            })
+            $('.btn-success').on('click', function() {
+                $('.jumbotron .demo-box').text('This is a success button');
+            })
+            $('.btn-danger').on('click', function() {
+                $('.jumbotron .demo-box').text('This is a danger button');
+            })
+            $('.btn-warning').on('click', function() {
+                $('.jumbotron .demo-box').text('This is a warning button');
+            })
+            $('.btn.yellow').on('click', function() {
+                $('.jumbotron .demo-box').text('This is a yellow button');
+            })
+            $('.btn.pink').on('click', function() {
+                $('.jumbotron .demo-box').text('This is a pink button');
+            })
+            $('.btn.salmon').on('click', function() {
+                $('.jumbotron .demo-box').text('This is a salmon button');
+            })
+        });
+    </script>
+</body>
+</html>
